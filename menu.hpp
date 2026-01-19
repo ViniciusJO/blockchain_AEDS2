@@ -1,8 +1,12 @@
 #pragma once
 #ifndef MENU
 #define MENU
+
 #include <iostream>
 #include <string>
+
+#include "blockchain.hpp"
+
 using namespace std;
 
 void exibirBloco(Bloco* block){
@@ -24,6 +28,8 @@ void exibirBlockchain(Blockchain* bc){
     }
 }
 
+#define PAUSE "read -n 1 -s -r -p \"Press any key to continue...\""
+
 void menu(Blockchain* bc){
     int opcao = 0;
     while(opcao!=4){
@@ -38,24 +44,24 @@ void menu(Blockchain* bc){
                 bc->adicionarBloco(aux);
                 break;
             case 2:
-                system("cls");
+                system("clear");
                 exibirBlockchain(bc);
-                system("pause && cls");
+                system(PAUSE" && clear");
                 break;
             case 3:
                 cout << "Blockchain ";
                 bc->validar() ? cout << "valida!\n" : cout << "invalida!\n";
-                system("pause");
+                system(PAUSE);
                 break;
             case 4:
                 break;
             default:
                 cout << "Opcao invalida!";
                 opcao = 2;
-                system("pause");
+                system(PAUSE);
                 break;
         }
-        system("cls");
+        system("clear");
     }
 }
 

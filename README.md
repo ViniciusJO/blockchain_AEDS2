@@ -1,27 +1,33 @@
 # BlockchainSeminarioAEDS2
-Este projeto faz parte da apresentação do seminário para a avaliação no curso de Algoritmos e Estruturas de Dados II da Universidade Federal de São João del-Rei - UFSJ
+Projeto de seminário para a avaliação no curso de Algoritmos e Estruturas de Dados II da Universidade Federal de São João del-Rei - UFSJ
 
 Professor: Sérgio De Oliveira
-
 Disciplina: Algoritmo e Estrutura de Dados II
 
+## Como rodar:
 
-##Fonte de informação:
+```sh
+make run
+```
 
-https://foxbit.com.br/o-que-e-blockchain/
+ou
 
-https://www.zurich.ibm.com/dccl/papers/cachin_dccl.pdf
+```sh
+make
+./blockchain
+```
 
-https://bitcoin.org/bitcoin.pdf
+## Fonte de informação:
+
+- [O que é blockchain](https://foxbit.com.br/o-que-e-blockchain/)
+- [Architecture of the Hyperledger Blockchain Fabric](https://www.zurich.ibm.com/dccl/papers/cachin_dccl.pdf)
+- [bitcoin](https://bitcoin.org/bitcoin.pdf)
 
 
-##Outro exemplo de implementação e ferramentas utilizadas:
+## Outro exemplo de implementação e ferramentas utilizadas:
 
-https://github.com/seanjameshan/blockchain
-
-https://blockchaindemo.io/
-
-https://emn178.github.io/online-tools/sha256.html
-
-http://www.zedwood.com/article/cpp-sha256-function
+- [seanjameshan/blockchain](https://github.com/seanjameshan/blockchain)
+- [blockchaindemo](https://blockchaindemo.io/)
+- [sha256](https://emn178.github.io/online-tools/sha256.html)
+- [cpp sha256 function](http://www.zedwood.com/article/cpp-sha256-function)
 
